@@ -103,53 +103,51 @@ neroAacDec -if ./audio_2/audio/aac_he_v2/aac_he_v2_128k.m4a -of ./audio_2/audio_
 neroAacDec -if ./audio_2/audio/aac_he_v2/aac_he_v2_160k.m4a -of ./audio_2/audio_decoded_flac/aac_he_v2/aac_he_v2_160k.wav
 neroAacDec -if ./audio_2/audio/aac_he_v2/aac_he_v2_192k.m4a -of ./audio_2/audio_decoded_flac/aac_he_v2/aac_he_v2_192k.wav
 neroAacDec -if ./audio_2/audio/aac_he_v2/aac_he_v2_256k.m4a -of ./audio_2/audio_decoded_flac/aac_he_v2/aac_he_v2_256k.wav
-oggenc -b 16 --ignorelength -o ./audio_1/audio/vorbis/vorbis_16k.ogg ORIGINAL_AUDIO_1.wav
-oggenc -b 24 --ignorelength -o ./audio_1/audio/vorbis/vorbis_24k.ogg ORIGINAL_AUDIO_1.wav
-oggenc -b 32 --ignorelength -o ./audio_1/audio/vorbis/vorbis_32k.ogg ORIGINAL_AUDIO_1.wav
-oggenc -b 48 --ignorelength -o ./audio_1/audio/vorbis/vorbis_48k.ogg ORIGINAL_AUDIO_1.wav
-oggenc -b 64 --ignorelength -o ./audio_1/audio/vorbis/vorbis_64k.ogg ORIGINAL_AUDIO_1.wav
-oggenc -b 80 --ignorelength -o ./audio_1/audio/vorbis/vorbis_80k.ogg ORIGINAL_AUDIO_1.wav
-oggenc -b 96 --ignorelength -o ./audio_1/audio/vorbis/vorbis_96k.ogg ORIGINAL_AUDIO_1.wav
-oggenc -b 112 --ignorelength -o ./audio_1/audio/vorbis/vorbis_112k.ogg ORIGINAL_AUDIO_1.wav
-oggenc -b 128 --ignorelength -o ./audio_1/audio/vorbis/vorbis_128k.ogg ORIGINAL_AUDIO_1.wav
-oggenc -b 160 --ignorelength -o ./audio_1/audio/vorbis/vorbis_160k.ogg ORIGINAL_AUDIO_1.wav
-oggenc -b 192 --ignorelength -o ./audio_1/audio/vorbis/vorbis_192k.ogg ORIGINAL_AUDIO_1.wav
-oggenc -b 256 --ignorelength -o ./audio_1/audio/vorbis/vorbis_256k.ogg ORIGINAL_AUDIO_1.wav
-oggenc -b 16 --ignorelength -o ./audio_2/audio/vorbis/vorbis_16k.ogg ORIGINAL_AUDIO_2.wav
-oggenc -b 24 --ignorelength -o ./audio_2/audio/vorbis/vorbis_24k.ogg ORIGINAL_AUDIO_2.wav
-oggenc -b 32 --ignorelength -o ./audio_2/audio/vorbis/vorbis_32k.ogg ORIGINAL_AUDIO_2.wav
-oggenc -b 48 --ignorelength -o ./audio_2/audio/vorbis/vorbis_48k.ogg ORIGINAL_AUDIO_2.wav
-oggenc -b 64 --ignorelength -o ./audio_2/audio/vorbis/vorbis_64k.ogg ORIGINAL_AUDIO_2.wav
-oggenc -b 80 --ignorelength -o ./audio_2/audio/vorbis/vorbis_80k.ogg ORIGINAL_AUDIO_2.wav
-oggenc -b 96 --ignorelength -o ./audio_2/audio/vorbis/vorbis_96k.ogg ORIGINAL_AUDIO_2.wav
-oggenc -b 112 --ignorelength -o ./audio_2/audio/vorbis/vorbis_112k.ogg ORIGINAL_AUDIO_2.wav
-oggenc -b 128 --ignorelength -o ./audio_2/audio/vorbis/vorbis_128k.ogg ORIGINAL_AUDIO_2.wav
-oggenc -b 160 --ignorelength -o ./audio_2/audio/vorbis/vorbis_160k.ogg ORIGINAL_AUDIO_2.wav
-oggenc -b 192 --ignorelength -o ./audio_2/audio/vorbis/vorbis_192k.ogg ORIGINAL_AUDIO_2.wav
-oggenc -b 256 --ignorelength -o ./audio_2/audio/vorbis/vorbis_256k.ogg ORIGINAL_AUDIO_2.wav
-opusenc --bitrate 16 --vbr --comp 10 ORIGINAL_AUDIO_1.wav ./audio_1/audio/opus/opus_16k.opus
-opusenc --bitrate 24 --vbr --comp 10 ORIGINAL_AUDIO_1.wav ./audio_1/audio/opus/opus_24k.opus
-opusenc --bitrate 32 --vbr --comp 10 ORIGINAL_AUDIO_1.wav ./audio_1/audio/opus/opus_32k.opus
-opusenc --bitrate 48 --vbr --comp 10 ORIGINAL_AUDIO_1.wav ./audio_1/audio/opus/opus_48k.opus
-opusenc --bitrate 64 --vbr --comp 10 ORIGINAL_AUDIO_1.wav ./audio_1/audio/opus/opus_64k.opus
-opusenc --bitrate 80 --vbr --comp 10 ORIGINAL_AUDIO_1.wav ./audio_1/audio/opus/opus_80k.opus
-opusenc --bitrate 96 --vbr --comp 10 ORIGINAL_AUDIO_1.wav ./audio_1/audio/opus/opus_96k.opus
-opusenc --bitrate 112 --vbr --comp 10 ORIGINAL_AUDIO_1.wav ./audio_1/audio/opus/opus_112k.opus
-opusenc --bitrate 128 --vbr --comp 10 ORIGINAL_AUDIO_1.wav ./audio_1/audio/opus/opus_128k.opus
-opusenc --bitrate 160 --vbr --comp 10 ORIGINAL_AUDIO_1.wav ./audio_1/audio/opus/opus_160k.opus
-opusenc --bitrate 192 --vbr --comp 10 ORIGINAL_AUDIO_1.wav ./audio_1/audio/opus/opus_192k.opus
-opusenc --bitrate 256 --vbr --comp 10 ORIGINAL_AUDIO_1.wav ./audio_1/audio/opus/opus_256k.opus
-opusenc --bitrate 16 --vbr --comp 10 ORIGINAL_AUDIO_2.wav ./audio_2/audio/opus/opus_16k.opus
-opusenc --bitrate 24 --vbr --comp 10 ORIGINAL_AUDIO_2.wav ./audio_2/audio/opus/opus_24k.opus
-opusenc --bitrate 32 --vbr --comp 10 ORIGINAL_AUDIO_2.wav ./audio_2/audio/opus/opus_32k.opus
-opusenc --bitrate 48 --vbr --comp 10 ORIGINAL_AUDIO_2.wav ./audio_2/audio/opus/opus_48k.opus
-opusenc --bitrate 64 --vbr --comp 10 ORIGINAL_AUDIO_2.wav ./audio_2/audio/opus/opus_64k.opus
-opusenc --bitrate 80 --vbr --comp 10 ORIGINAL_AUDIO_2.wav ./audio_2/audio/opus/opus_80k.opus
-opusenc --bitrate 96 --vbr --comp 10 ORIGINAL_AUDIO_2.wav ./audio_2/audio/opus/opus_96k.opus
-opusenc --bitrate 112 --vbr --comp 10 ORIGINAL_AUDIO_2.wav ./audio_2/audio/opus/opus_112k.opus
-opusenc --bitrate 128 --vbr --comp 10 ORIGINAL_AUDIO_2.wav ./audio_2/audio/opus/opus_128k.opus
-opusenc --bitrate 160 --vbr --comp 10 ORIGINAL_AUDIO_2.wav ./audio_2/audio/opus/opus_160k.opus
-opusenc --bitrate 192 --vbr --comp 10 ORIGINAL_AUDIO_2.wav ./audio_2/audio/opus/opus_192k.opus
-opusenc --bitrate 256 --vbr --comp 10 ORIGINAL_AUDIO_2.wav ./audio_2/audio/opus/opus_256k.opus
-rm ORIGINAL_AUDIO_1.wav
-rm ORIGINAL_AUDIO_2.wav
+oggdec -b 16 -o ./audio_1/audio_decoded_flac/vorbis/vorbis_16k.wav ./audio_1/audio/vorbis/vorbis_16k.ogg
+oggdec -b 16 -o ./audio_1/audio_decoded_flac/vorbis/vorbis_24k.wav ./audio_1/audio/vorbis/vorbis_24k.ogg
+oggdec -b 16 -o ./audio_1/audio_decoded_flac/vorbis/vorbis_32k.wav ./audio_1/audio/vorbis/vorbis_32k.ogg
+oggdec -b 16 -o ./audio_1/audio_decoded_flac/vorbis/vorbis_48k.wav ./audio_1/audio/vorbis/vorbis_48k.ogg
+oggdec -b 16 -o ./audio_1/audio_decoded_flac/vorbis/vorbis_64k.wav ./audio_1/audio/vorbis/vorbis_64k.ogg
+oggdec -b 16 -o ./audio_1/audio_decoded_flac/vorbis/vorbis_80k.wav ./audio_1/audio/vorbis/vorbis_80k.ogg
+oggdec -b 16 -o ./audio_1/audio_decoded_flac/vorbis/vorbis_96k.wav ./audio_1/audio/vorbis/vorbis_96k.ogg
+oggdec -b 16 -o ./audio_1/audio_decoded_flac/vorbis/vorbis_112k.wav ./audio_1/audio/vorbis/vorbis_112k.ogg
+oggdec -b 16 -o ./audio_1/audio_decoded_flac/vorbis/vorbis_128k.wav ./audio_1/audio/vorbis/vorbis_128k.ogg
+oggdec -b 16 -o ./audio_1/audio_decoded_flac/vorbis/vorbis_160k.wav ./audio_1/audio/vorbis/vorbis_160k.ogg
+oggdec -b 16 -o ./audio_1/audio_decoded_flac/vorbis/vorbis_192k.wav ./audio_1/audio/vorbis/vorbis_192k.ogg
+oggdec -b 16 -o ./audio_1/audio_decoded_flac/vorbis/vorbis_256k.wav ./audio_1/audio/vorbis/vorbis_256k.ogg
+oggdec -b 16 -o ./audio_2/audio_decoded_flac/vorbis/vorbis_16k.wav ./audio_2/audio/vorbis/vorbis_16k.ogg
+oggdec -b 16 -o ./audio_2/audio_decoded_flac/vorbis/vorbis_24k.wav ./audio_2/audio/vorbis/vorbis_24k.ogg
+oggdec -b 16 -o ./audio_2/audio_decoded_flac/vorbis/vorbis_32k.wav ./audio_2/audio/vorbis/vorbis_32k.ogg
+oggdec -b 16 -o ./audio_2/audio_decoded_flac/vorbis/vorbis_48k.wav ./audio_2/audio/vorbis/vorbis_48k.ogg
+oggdec -b 16 -o ./audio_2/audio_decoded_flac/vorbis/vorbis_64k.wav ./audio_2/audio/vorbis/vorbis_64k.ogg
+oggdec -b 16 -o ./audio_2/audio_decoded_flac/vorbis/vorbis_80k.wav ./audio_2/audio/vorbis/vorbis_80k.ogg
+oggdec -b 16 -o ./audio_2/audio_decoded_flac/vorbis/vorbis_96k.wav ./audio_2/audio/vorbis/vorbis_96k.ogg
+oggdec -b 16 -o ./audio_2/audio_decoded_flac/vorbis/vorbis_112k.wav ./audio_2/audio/vorbis/vorbis_112k.ogg
+oggdec -b 16 -o ./audio_2/audio_decoded_flac/vorbis/vorbis_128k.wav ./audio_2/audio/vorbis/vorbis_128k.ogg
+oggdec -b 16 -o ./audio_2/audio_decoded_flac/vorbis/vorbis_160k.wav ./audio_2/audio/vorbis/vorbis_160k.ogg
+oggdec -b 16 -o ./audio_2/audio_decoded_flac/vorbis/vorbis_192k.wav ./audio_2/audio/vorbis/vorbis_192k.ogg
+oggdec -b 16 -o ./audio_2/audio_decoded_flac/vorbis/vorbis_256k.wav ./audio_2/audio/vorbis/vorbis_256k.ogg
+opusdec --force-stereo --force-wav ./audio_1/audio/opus/opus_16k.opus ./audio_1/audio_decoded_flac/opus/opus_16k.wav
+opusdec --force-stereo --force-wav ./audio_1/audio/opus/opus_24k.opus ./audio_1/audio_decoded_flac/opus/opus_24k.wav
+opusdec --force-stereo --force-wav ./audio_1/audio/opus/opus_32k.opus ./audio_1/audio_decoded_flac/opus/opus_32k.wav
+opusdec --force-stereo --force-wav ./audio_1/audio/opus/opus_48k.opus ./audio_1/audio_decoded_flac/opus/opus_48k.wav
+opusdec --force-stereo --force-wav ./audio_1/audio/opus/opus_64k.opus ./audio_1/audio_decoded_flac/opus/opus_64k.wav
+opusdec --force-stereo --force-wav ./audio_1/audio/opus/opus_80k.opus ./audio_1/audio_decoded_flac/opus/opus_80k.wav
+opusdec --force-stereo --force-wav ./audio_1/audio/opus/opus_96k.opus ./audio_1/audio_decoded_flac/opus/opus_96k.wav
+opusdec --force-stereo --force-wav ./audio_1/audio/opus/opus_112k.opus ./audio_1/audio_decoded_flac/opus/opus_112k.wav
+opusdec --force-stereo --force-wav ./audio_1/audio/opus/opus_128k.opus ./audio_1/audio_decoded_flac/opus/opus_128k.wav
+opusdec --force-stereo --force-wav ./audio_1/audio/opus/opus_160k.opus ./audio_1/audio_decoded_flac/opus/opus_160k.wav
+opusdec --force-stereo --force-wav ./audio_1/audio/opus/opus_192k.opus ./audio_1/audio_decoded_flac/opus/opus_192k.wav
+opusdec --force-stereo --force-wav ./audio_1/audio/opus/opus_256k.opus ./audio_1/audio_decoded_flac/opus/opus_256k.wav
+opusdec --force-stereo --force-wav ./audio_2/audio/opus/opus_16k.opus ./audio_2/audio_decoded_flac/opus/opus_16k.wav
+opusdec --force-stereo --force-wav ./audio_2/audio/opus/opus_24k.opus ./audio_2/audio_decoded_flac/opus/opus_24k.wav
+opusdec --force-stereo --force-wav ./audio_2/audio/opus/opus_32k.opus ./audio_2/audio_decoded_flac/opus/opus_32k.wav
+opusdec --force-stereo --force-wav ./audio_2/audio/opus/opus_48k.opus ./audio_2/audio_decoded_flac/opus/opus_48k.wav
+opusdec --force-stereo --force-wav ./audio_2/audio/opus/opus_64k.opus ./audio_2/audio_decoded_flac/opus/opus_64k.wav
+opusdec --force-stereo --force-wav ./audio_2/audio/opus/opus_80k.opus ./audio_2/audio_decoded_flac/opus/opus_80k.wav
+opusdec --force-stereo --force-wav ./audio_2/audio/opus/opus_96k.opus ./audio_2/audio_decoded_flac/opus/opus_96k.wav
+opusdec --force-stereo --force-wav ./audio_2/audio/opus/opus_112k.opus ./audio_2/audio_decoded_flac/opus/opus_112k.wav
+opusdec --force-stereo --force-wav ./audio_2/audio/opus/opus_128k.opus ./audio_2/audio_decoded_flac/opus/opus_128k.wav
+opusdec --force-stereo --force-wav ./audio_2/audio/opus/opus_160k.opus ./audio_2/audio_decoded_flac/opus/opus_160k.wav
+opusdec --force-stereo --force-wav ./audio_2/audio/opus/opus_192k.opus ./audio_2/audio_decoded_flac/opus/opus_192k.wav
+opusdec --force-stereo --force-wav ./audio_2/audio/opus/opus_256k.opus ./audio_2/audio_decoded_flac/opus/opus_256k.wav
