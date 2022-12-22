@@ -1,6 +1,16 @@
 #!/bin/bash
-mkdir ./audio_1/spectrogram
-mkdir ./audio_2/spectrogram
+mkdir -p ./audio_1/spectrogram/mp3
+mkdir -p ./audio_1/spectrogram/aac_lc
+mkdir -p ./audio_1/spectrogram/aac_he_v1
+mkdir -p ./audio_1/spectrogram/aac_he_v2
+mkdir -p ./audio_1/spectrogram/vorbis
+mkdir -p ./audio_1/spectrogram/opus
+mkdir -p ./audio_2/spectrogram/mp3
+mkdir -p ./audio_2/spectrogram/aac_lc
+mkdir -p ./audio_2/spectrogram/aac_he_v1
+mkdir -p ./audio_2/spectrogram/aac_he_v2
+mkdir -p ./audio_2/spectrogram/vorbis
+mkdir -p ./audio_2/spectrogram/opus
 sox --multi-threaded --show-progress ORIGINAL_AUDIO_1.flac -n spectrogram -x 4096 -y 1025 -o ORIGINAL_AUDIO_1.png
 sox --multi-threaded --show-progress ORIGINAL_AUDIO_2.flac -n spectrogram -x 4096 -y 1025 -o ORIGINAL_AUDIO_2.png
 sox --multi-threaded --show-progress ./audio_1/audio_decoded_flac/aac_he_v1/aac_he_v1_16k.wav -n spectrogram -x 4096 -y 1025 -o ./audio_1/spectrogram/aac_he_v1/aac_he_v1_16k.png
