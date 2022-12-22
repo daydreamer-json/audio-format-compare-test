@@ -1,16 +1,16 @@
 #!/bin/bash
 flac -d ORIGINAL_AUDIO_1.flac
 flac -d ORIGINAL_AUDIO_2.flac
-lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 32 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_abr_32k.mp3
-lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 48 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_abr_48k.mp3
-lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 64 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_abr_64k.mp3
-lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 80 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_abr_80k.mp3
-lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 96 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_abr_96k.mp3
-lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 112 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_abr_112k.mp3
-lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 128 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_abr_128k.mp3
-lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 160 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_abr_160k.mp3
-lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 192 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_abr_192k.mp3
-lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 256 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_abr_256k.mp3
+lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 32 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_32k.mp3
+lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 48 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_48k.mp3
+lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 64 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_64k.mp3
+lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 80 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_80k.mp3
+lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 96 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_96k.mp3
+lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 112 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_112k.mp3
+lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 128 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_128k.mp3
+lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 160 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_160k.mp3
+lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 192 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_192k.mp3
+lame --brief --disptime 5 --resample 48 --lowpass 20.5 -q 0 --abr 256 ORIGINAL_AUDIO_1.wav ./audio_1/audio/mp3/mp3_256k.mp3
 neroAacEnc -lc -2pass -br 16000 -if ORIGINAL_AUDIO_1.wav -of ./audio_1/audio/aac_lc/aac_lc_16k.m4a
 neroAacEnc -lc -2pass -br 24000 -if ORIGINAL_AUDIO_1.wav -of ./audio_1/audio/aac_lc/aac_lc_24k.m4a
 neroAacEnc -lc -2pass -br 32000 -if ORIGINAL_AUDIO_1.wav -of ./audio_1/audio/aac_lc/aac_lc_32k.m4a
